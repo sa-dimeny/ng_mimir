@@ -4,13 +4,13 @@
     <div class="tile-image" class="{{tileData.type}}">
         <img
             *ngIf="tileData.content.length > 1"
-            src="../../assets/puck_{{ tileData.content.length }}.png"
+            src="./assets/puck_{{ tileData.content.length }}.png"
             alt="tile"
             class="img-responsive"
             style="max-width: 100px; margin-bottom: 40px; cursor: pointer;">
         <img
             *ngIf="tileData.content.length === 1"
-            src="../../assets/puck_{{ tileData.content[0] }}.png"
+            src="./assets/puck_{{ tileData.content[0] }}.png"
             alt="tile"
             class="img-responsive"
             style="max-width: 100px; pointer-events: none;">
