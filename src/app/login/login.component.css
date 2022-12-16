@@ -1,0 +1,54 @@
+.bg-container {
+    background-image: url(../../assets/vegvisir.png);
+    background-color: #466333;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 18%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-container {
+    background-color: #466333;
+    height: 28vh;
+}
+
+button {
+    margin: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 17px;
+    padding: 0px;
+    vertical-align: middle;
+    background-color:#26351c;
+    color: #80b45c;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+input.username {
+    border: 1px solid darkgreen;
+    margin: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #466333;
+  -webkit-text-fill-color: #80b45c;
+  -webkit-box-shadow: 0 0 0px 1000px #26351c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

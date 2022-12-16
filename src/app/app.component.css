@@ -1,5 +1,6 @@
-.bg-container {
+.row {
     background-image: url(../assets/tree.png);
+    background-color: #466333;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18%;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService, Player } from '../game-status/game.service';
 import { GameBoardService } from './game-board.service';
 
 @Component({
@@ -8,10 +9,16 @@ import { GameBoardService } from './game-board.service';
 })
 export class GameBoardComponent implements OnInit{
   selectedPuck: any = "";
+  myPlayer!: Player;
 
-  constructor(private gameBoardService: GameBoardService) {}
+  constructor(
+    private gameBoardService: GameBoardService,
+    private gameService: GameService
+    ) {}
 
   ngOnInit(): void {
+    //  --- player enters Name
+    this.myPlayer = this.gameService.getUserData();
   }
 
   getTileData(index: number) {

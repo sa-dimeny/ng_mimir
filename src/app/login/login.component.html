@@ -1,0 +1,24 @@
+<div class="row bg-container" style="height: 72vh;"></div>
+
+<div class="row justify-content-center login-container">
+    <div class="col-2">
+        <form (ngSubmit)="onLogin()" #f="ngForm">
+            <div class="form-group">
+                <label for="username">Welcome, warrior!</label>
+                <input
+                    style="text-align: center;"
+                    type="text"
+                    id="username"
+                    class="form-control username"
+                    ngModel
+                    name="username"
+                    required>
+                <button
+                    class="btn"
+                    type="submit"
+                    [disabled]="!f.valid">ENTER
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
